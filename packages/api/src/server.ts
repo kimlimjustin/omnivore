@@ -94,7 +94,7 @@ export const createApp = (): {
   app.use('/api/notification', notificationRouter())
   app.use('/api/integration', integrationRouter())
   app.use('/api/tasks', taskRouter())
-  app.use('/api/digest', digestRouter)
+  app.use('/api/digest', digestRouter())
   app.use('/svc/pubsub/content', contentServiceRouter())
   app.use('/svc/pubsub/links', linkServiceRouter())
   app.use('/svc/pubsub/newsletters', newsletterServiceRouter())
